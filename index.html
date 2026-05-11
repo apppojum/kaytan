@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaytanoğlu İnşaat — 1997'den bugüne sağlam yapılar</title>
+  <meta name="description" content="Esenler'de kurulduğu 1997'den bu yana 100'den fazla projeyi başarıyla tamamlayan, kalite ve güvene dayalı müteahhitlik hizmetleri sunan aile şirketi." />
+  <meta name="keywords" content="Kaytanoğlu İnşaat, Esenler müteahhit, kentsel dönüşüm, kat karşılığı, anahtar teslim konut, İstanbul müteahhit" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kaytanoğlu İnşaat — 1997'den bugüne sağlam yapılar" />
+  <meta property="og:description" content="Esenler'de kurulduğu günden bugüne 100'ün üzerinde projeyi başarıyla teslim eden Kaytanoğlu İnşaat." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#0F1B36', 950: '#091022' },
+            accent: { DEFAULT: '#E97223', 600: '#C45A14' },
+            cream: '#FAF7F2',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #FAF7F2; color: #0F1B36; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    /* Hide scrollbar on lightbox open */
+    body.no-scroll { overflow: hidden; }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- ========== HEADER ========== -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+      <a href="#" class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-md bg-accent text-white">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 21V9l4-3v15zm6 0V6l4-3v18zm6 0V11l4-3v13z" />
+          </svg>
+        </div>
+        <div class="leading-tight">
+          <div class="font-display text-xl font-semibold text-white">Kaytanoğlu</div>
+          <div class="text-[11px] uppercase tracking-[0.25em] text-accent">İnşaat</div>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex">
+        <a href="#hakkimizda" class="text-sm font-medium text-white/85 transition hover:text-accent">Hakkımızda</a>
+        <a href="#hizmetler" class="text-sm font-medium text-white/85 transition hover:text-accent">Hizmetler</a>
+        <a href="#projeler" class="text-sm font-medium text-white/85 transition hover:text-accent">Projeler</a>
+        <a href="#iletisim" class="text-sm font-medium text-white/85 transition hover:text-accent">İletişim</a>
+        <a href="tel:+902126467560" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:bg-accent-600">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +90 (212) 646 75 60
+        </a>
+      </nav>
+
+      <button id="menu-btn" aria-label="Menü" class="md:hidden text-white">
+        <svg id="menu-icon-open" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="menu-icon-close" class="hidden" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-navy">
+      <nav class="flex flex-col p-6">
+        <a href="#hakkimizda" class="py-3 text-base font-medium text-white/90 hover:text-accent">Hakkımızda</a>
+        <a href="#hizmetler" class="py-3 text-base font-medium text-white/90 hover:text-accent">Hizmetler</a>
+        <a href="#projeler" class="py-3 text-base font-medium text-white/90 hover:text-accent">Projeler</a>
+        <a href="#iletisim" class="py-3 text-base font-medium text-white/90 hover:text-accent">İletişim</a>
+        <a href="tel:+902126467560" class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white">+90 (212) 646 75 60</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-navy">
+    <div class="absolute inset-0 -z-10 bg-cover bg-center" style="background-image: url('projects/proje_03.jpg');"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+
+    <div class="mx-auto w-full max-w-7xl px-6 py-32 lg:px-10">
+      <div class="max-w-3xl">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-accent">
+          <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+          <span id="years-active">Kuruluşundan bu yana 28 yıl</span>
+        </div>
+
+        <h1 class="font-display text-5xl font-semibold leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+          1997'den bugüne <br />
+          <span class="text-accent">sağlam yapılar.</span>
+        </h1>
+
+        <p class="mt-8 max-w-2xl text-lg leading-relaxed text-white/80">
+          Esenler'de kurulduğu günden bugüne 100'ün üzerinde projeyi başarıyla teslim eden Kaytanoğlu İnşaat; deprem dayanıklı, modern, kullanıcı odaklı yapılar inşa eder. İstanbul'un dört bir yanında ailelerin evi olduk.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#projeler" class="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent-600">
+            Projelerimizi Görün
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#iletisim" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/10">
+            Bizimle İletişime Geçin
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#hakkimizda" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 transition hover:text-accent" aria-label="Aşağı kaydır">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="hakkimizda" class="relative bg-cream py-24 lg:py-32">
+    <div class="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:gap-20 lg:px-10">
+      <div class="relative">
+        <div class="absolute -left-4 -top-4 h-full w-full rounded-2xl border-2 border-accent"></div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-2xl bg-navy">
+          <img src="projects/proje_15.jpg" alt="Kaytanoğlu İnşaat referans projesi" class="h-full w-full object-cover" loading="lazy" />
+        </div>
+        <div class="absolute -right-4 -bottom-4 hidden rounded-xl bg-navy p-6 text-white shadow-2xl sm:block">
+          <div class="font-display text-4xl font-semibold text-accent" id="years-stat">28+</div>
+          <div class="text-xs uppercase tracking-widest text-white/70">Yıllık Tecrübe</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <div class="text-xs font-semibold uppercase tracking-[0.25em] text-accent">Hakkımızda</div>
+        <h2 class="mt-4 font-display text-4xl font-semibold leading-tight text-navy sm:text-5xl">
+          Bir mahalleden başladı, <br />
+          <span class="text-accent">İstanbul'a yayıldı.</span>
+        </h2>
+
+        <div class="mt-8 space-y-5 text-lg leading-relaxed text-navy/80">
+          <p>
+            <strong class="text-navy">Kadir Kaytanoğlu</strong>, 1997 yılında Esenler'de küçük bir ofiste işe başladığında niyeti sadeydi: kendi mahallesinde, bildiği insanlar için, eşi dostuna gönül rahatlığıyla gösterebileceği binalar yapmak. İlk projeleri bir-iki daireden ibaret mütevazı işlerdi — ama her birini, içinde kendisi oturacakmış gibi titizlikle inşa etti.
+          </p>
+          <p>
+            Bu yaklaşım, yılları aşan bir güven ilişkisine dönüştü. Bugün 28 yılı geride bıraktık ve 100'ün üzerinde tamamlanmış proje arkamızda. Ama bu büyümenin tamamı kulaktan kulağa yayılan tavsiye ve memnun ev sahiplerinin yeni müşterileri tanıştırmasıyla gerçekleşti. Bizim için en değerli referans, yıllar sonra bile bizi arayıp akrabasının binasını da yapmamızı isteyen aile reisidir.
+          </p>
+          <p>
+            Esenler'in yanı sıra Bakırköy ve Bostancı gibi semtlerde de proje üreten Kaytanoğlu İnşaat; deprem yönetmeliğine tam uyum, dürüst malzeme ve şeffaf hesap ilkelerinden hiçbir zaman taviz vermez. Çünkü inşa ettiğimiz şey sadece beton ve demir değil; bir ailenin güveni, çocukların büyüdüğü yuva ve bir mahallenin geleceğidir.
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#projeler" class="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy/90">Projelerimize Bakın</a>
+          <a href="#iletisim" class="inline-flex items-center gap-2 rounded-full border border-navy/20 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy hover:bg-navy hover:text-white">Bize Ulaşın</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="bg-navy py-20 lg:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="grid grid-cols-2 gap-y-10 gap-x-6 lg:grid-cols-4 lg:gap-x-12">
+        <div class="text-center lg:text-left">
+          <div class="font-display text-5xl font-semibold leading-none text-accent sm:text-6xl" id="stat-years">28+</div>
+          <div class="mt-3 text-sm uppercase tracking-widest text-white/70">Yıllık Tecrübe</div>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="font-display text-5xl font-semibold leading-none text-accent sm:text-6xl">100+</div>
+          <div class="mt-3 text-sm uppercase tracking-widest text-white/70">Tamamlanmış Proje</div>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="font-display text-5xl font-semibold leading-none text-accent sm:text-6xl">3</div>
+          <div class="mt-3 text-sm uppercase tracking-widest text-white/70">İlçe (Esenler, Bakırköy, Bostancı)</div>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="font-display text-5xl font-semibold leading-none text-accent sm:text-6xl">1997</div>
+          <div class="mt-3 text-sm uppercase tracking-widest text-white/70">Kuruluş Yılı</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="hizmetler" class="bg-cream py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="mx-auto max-w-3xl text-center">
+        <div class="text-xs font-semibold uppercase tracking-[0.25em] text-accent">Hizmetlerimiz</div>
+        <h2 class="mt-4 font-display text-4xl font-semibold leading-tight text-navy sm:text-5xl">Yapının her aşamasında yanınızdayız</h2>
+        <p class="mt-6 text-lg text-navy/70">Konseptten anahtar teslime, kentsel dönüşümden tadilata kadar geniş kapsamlı müteahhitlik hizmetleri sunuyoruz.</p>
+      </div>
+
+      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Service 1 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-navy/10 bg-white p-8 transition hover:border-accent hover:shadow-xl hover:shadow-navy/5">
+          <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l4-3v15zm6 0V6l4-3v18zm6 0V11l4-3v13z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-navy">Anahtar Teslim Konut</h3>
+          <p class="mt-3 text-sm leading-relaxed text-navy/70">Mimari tasarımdan ruhsat süreçlerine, kaba inşaattan ince işçiliğe kadar projenin tüm aşamasını tek elden yönetiyoruz. Siz sadece anahtarı teslim alın — kalanını biz çözelim.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-navy/10 bg-white p-8 transition hover:border-accent hover:shadow-xl hover:shadow-navy/5">
+          <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0115.5-6.3M21 12a9 9 0 01-15.5 6.3M21 5v4h-4M3 19v-4h4"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-navy">Kentsel Dönüşüm</h3>
+          <p class="mt-3 text-sm leading-relaxed text-navy/70">Riskli yapı tespitinden yıkım ve yeniden inşaya, hak sahipliği ve geçici konut süreçlerine kadar kentsel dönüşümün her detayını 28 yıllık tecrübemizle yönetiyoruz.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-navy/10 bg-white p-8 transition hover:border-accent hover:shadow-xl hover:shadow-navy/5">
+          <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l4-4 4 4 4-4 4 4 4-4M8 12l3 3 3-3M2 12v3l5 5 5-5 5 5 5-5v-3"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-navy">Kat Karşılığı Yapım</h3>
+          <p class="mt-3 text-sm leading-relaxed text-navy/70">Arsa sahipleriyle birlikte değer üretiyoruz. Adil paylaşım, açık sözleşme şartları ve belediye süreçlerinin eksiksiz takibiyle arsanızı en doğru şekilde değerlendiriyoruz.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-navy/10 bg-white p-8 transition hover:border-accent hover:shadow-xl hover:shadow-navy/5">
+          <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 105.6 5.6L21 13l-7 7-2-2 7-7-1.4-1.4-3.9.7zM3 21l6-6"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-navy">Müteahhitlik & Tadilat</h3>
+          <p class="mt-3 text-sm leading-relaxed text-navy/70">Mevcut binalarda dış cephe yenileme, çatı, ısı yalıtımı ve kapsamlı tadilat işleri. Küçük işlerde de aynı kaliteyi koruyan ekibimizle yapınızın değerini ve konforunu artırıyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projeler" class="bg-navy py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="mx-auto max-w-3xl text-center">
+        <div class="text-xs font-semibold uppercase tracking-[0.25em] text-accent">Referans Projeler</div>
+        <h2 class="mt-4 font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">Tamamlanmış işlerimizden bir seçki</h2>
+        <p class="mt-6 text-lg text-white/70">Esenler, Bakırköy ve Bostancı'da hayata geçirdiğimiz, kalitesi zamanla kanıtlanmış projeler.</p>
+      </div>
+
+      <div id="project-grid" class="mt-16 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <!-- Projeler JS ile burada üretilir -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[100] items-center justify-center bg-navy/95 p-6 backdrop-blur">
+    <button id="lb-close" class="absolute right-6 top-6 text-white/80 hover:text-accent" aria-label="Kapat">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button id="lb-prev" class="absolute left-6 text-white/70 hover:text-accent" aria-label="Önceki">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <img id="lb-img" src="" alt="" class="max-h-[88vh] max-w-[88vw] rounded-xl object-contain shadow-2xl" />
+    <button id="lb-next" class="absolute right-6 text-white/70 hover:text-accent" aria-label="Sonraki">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+    <div id="lb-counter" class="absolute bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-white/10 px-4 py-1.5 text-sm text-white backdrop-blur">1 / 19</div>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="iletisim" class="bg-cream py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-20">
+        <!-- Sol -->
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-[0.25em] text-accent">İletişim</div>
+          <h2 class="mt-4 font-display text-4xl font-semibold leading-tight text-navy sm:text-5xl">
+            Bir araya gelelim, <br />projenizi konuşalım.
+          </h2>
+          <p class="mt-6 text-lg text-navy/70">
+            Kentsel dönüşüm, kat karşılığı veya anahtar teslim yapım — hangi ihtiyacınız varsa, ekibimiz sizinle ilk randevuyu en kısa sürede ayarlar.
+          </p>
+
+          <div class="mt-10 space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="text-xs uppercase tracking-widest text-navy/50">Telefon</div>
+                <a href="tel:+902126467560" class="mt-1 block text-lg font-semibold text-navy hover:text-accent">+90 (212) 646 75 60</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              </div>
+              <div>
+                <div class="text-xs uppercase tracking-widest text-navy/50">Email</div>
+                <a href="mailto:info@kaytanoglu.com.tr" class="mt-1 block text-lg font-semibold text-navy hover:text-accent">info@kaytanoglu.com.tr</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="text-xs uppercase tracking-widest text-navy/50">Adres</div>
+                <div class="mt-1 text-lg font-semibold text-navy">Esenler, İstanbul</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 overflow-hidden rounded-2xl border border-navy/10 shadow-lg">
+            <iframe src="https://www.google.com/maps?q=Esenler%2C+İstanbul&output=embed" width="100%" height="280" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Konum"></iframe>
+          </div>
+        </div>
+
+        <!-- Sağ form -->
+        <form id="contact-form" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-xl shadow-navy/5 sm:p-10">
+          <h3 class="font-display text-2xl font-semibold text-navy">Bize yazın</h3>
+          <p class="mt-2 text-sm text-navy/60">Formu doldurun, en kısa sürede size dönelim.</p>
+
+          <div class="mt-8 space-y-5">
+            <label class="block">
+              <span class="text-sm font-medium text-navy">Ad Soyad <span class="text-accent">*</span></span>
+              <input name="name" type="text" required class="mt-2 w-full rounded-xl border border-navy/15 bg-cream/50 px-4 py-3 text-navy placeholder:text-navy/40 focus:border-accent focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/20" />
+            </label>
+            <div class="grid gap-5 sm:grid-cols-2">
+              <label class="block">
+                <span class="text-sm font-medium text-navy">Telefon <span class="text-accent">*</span></span>
+                <input name="phone" type="tel" required class="mt-2 w-full rounded-xl border border-navy/15 bg-cream/50 px-4 py-3 text-navy placeholder:text-navy/40 focus:border-accent focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/20" />
+              </label>
+              <label class="block">
+                <span class="text-sm font-medium text-navy">Email <span class="text-accent">*</span></span>
+                <input name="email" type="email" required class="mt-2 w-full rounded-xl border border-navy/15 bg-cream/50 px-4 py-3 text-navy placeholder:text-navy/40 focus:border-accent focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/20" />
+              </label>
+            </div>
+            <label class="block">
+              <span class="text-sm font-medium text-navy">Mesajınız <span class="text-accent">*</span></span>
+              <textarea name="message" rows="4" required class="mt-2 w-full rounded-xl border border-navy/15 bg-cream/50 px-4 py-3 text-navy placeholder:text-navy/40 focus:border-accent focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/20"></textarea>
+            </label>
+
+            <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent-600 sm:w-auto">Gönder</button>
+            <p id="form-status" class="hidden text-sm text-green-600">Email istemcinizi açtık — gönder tuşuna basıp tamamlamanız yeterli.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-navy text-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+      <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="sm:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-md bg-accent">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M3 21V9l4-3v15zm6 0V6l4-3v18zm6 0V11l4-3v13z"/></svg>
+            </div>
+            <div>
+              <div class="font-display text-xl font-semibold">Kaytanoğlu İnşaat</div>
+              <div class="text-xs uppercase tracking-[0.25em] text-accent">1997</div>
+            </div>
+          </div>
+          <p class="mt-6 max-w-md text-sm leading-relaxed text-white/60">
+            Esenler'de kurulduğu 1997'den bu yana 100'den fazla projeyi başarıyla tamamlayan, kalite ve güvene dayalı müteahhitlik hizmetleri sunan aile şirketi.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-widest text-accent">Bağlantılar</div>
+          <ul class="mt-5 space-y-3 text-sm text-white/70">
+            <li><a href="#hakkimizda" class="hover:text-accent">Hakkımızda</a></li>
+            <li><a href="#hizmetler" class="hover:text-accent">Hizmetler</a></li>
+            <li><a href="#projeler" class="hover:text-accent">Projeler</a></li>
+            <li><a href="#iletisim" class="hover:text-accent">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-widest text-accent">İletişim</div>
+          <ul class="mt-5 space-y-3 text-sm text-white/70">
+            <li><a href="tel:+902126467560" class="hover:text-accent">+90 (212) 646 75 60</a></li>
+            <li><a href="mailto:info@kaytanoglu.com.tr" class="hover:text-accent">info@kaytanoglu.com.tr</a></li>
+            <li>Esenler, İstanbul</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row">
+        <div>© <span id="copy-year">2026</span> Kaytanoğlu İnşaat. Tüm hakları saklıdır.</div>
+        <div>1997 — <span id="copy-year-2">2026</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // -------- Dynamic year & tenure --------
+    const FOUNDED = 1997;
+    const NOW_YEAR = new Date().getFullYear();
+    const TENURE = NOW_YEAR - FOUNDED;
+    document.getElementById('years-active').textContent = `Kuruluşundan bu yana ${TENURE} yıl`;
+    document.getElementById('years-stat').textContent = `${TENURE}+`;
+    document.getElementById('stat-years').textContent = `${TENURE}+`;
+    document.getElementById('copy-year').textContent = NOW_YEAR;
+    document.getElementById('copy-year-2').textContent = NOW_YEAR;
+
+    // -------- Header scroll effect --------
+    const header = document.getElementById('site-header');
+    function onScroll() {
+      if (window.scrollY > 24) {
+        header.classList.remove('bg-transparent');
+        header.classList.add('bg-navy/95', 'backdrop-blur', 'shadow-lg', 'shadow-navy/10');
+      } else {
+        header.classList.add('bg-transparent');
+        header.classList.remove('bg-navy/95', 'backdrop-blur', 'shadow-lg', 'shadow-navy/10');
+      }
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+
+    // -------- Mobile menu --------
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    }));
+
+    // -------- Project grid --------
+    const PROJECTS = Array.from({ length: 19 }, (_, i) => {
+      const n = String(i + 1).padStart(2, '0');
+      return { src: `projects/proje_${n}.jpg`, district: 'Esenler', num: n };
+    });
+    const grid = document.getElementById('project-grid');
+    grid.innerHTML = PROJECTS.map((p, i) => `
+      <button data-index="${i}" class="project-tile group relative aspect-[3/4] overflow-hidden rounded-xl bg-navy/50">
+        <img src="${p.src}" alt="Kaytanoğlu İnşaat — ${p.district} projesi ${p.num}" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/20 to-transparent opacity-60 transition group-hover:opacity-90"></div>
+        <div class="absolute inset-x-0 bottom-0 p-4 text-left">
+          <div class="text-xs font-medium uppercase tracking-widest text-accent">${p.district}</div>
+          <div class="mt-1 text-sm font-semibold text-white">Proje #${p.num}</div>
+        </div>
+      </button>
+    `).join('');
+
+    // -------- Lightbox --------
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbCounter = document.getElementById('lb-counter');
+    let activeIdx = 0;
+
+    function openLightbox(i) {
+      activeIdx = i;
+      lbImg.src = PROJECTS[i].src;
+      lbCounter.textContent = `${i + 1} / ${PROJECTS.length}`;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.classList.add('no-scroll');
+    }
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.classList.remove('no-scroll');
+    }
+    function navigate(dir) {
+      activeIdx = (activeIdx + dir + PROJECTS.length) % PROJECTS.length;
+      lbImg.src = PROJECTS[activeIdx].src;
+      lbCounter.textContent = `${activeIdx + 1} / ${PROJECTS.length}`;
+    }
+
+    grid.querySelectorAll('.project-tile').forEach(btn => {
+      btn.addEventListener('click', () => openLightbox(parseInt(btn.dataset.index, 10)));
+    });
+    document.getElementById('lb-close').addEventListener('click', closeLightbox);
+    document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); navigate(-1); });
+    document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); navigate(1); });
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
+    });
+
+    // -------- Contact form (mailto fallback) --------
+    document.getElementById('contact-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const data = Object.fromEntries(fd);
+      const subject = encodeURIComponent(`Web sitesi mesajı — ${data.name}`);
+      const body = encodeURIComponent(
+        `Ad Soyad: ${data.name}\nTelefon: ${data.phone}\nEmail: ${data.email}\n\nMesaj:\n${data.message}`
+      );
+      window.location.href = `mailto:info@kaytanoglu.com.tr?subject=${subject}&body=${body}`;
+      document.getElementById('form-status').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
